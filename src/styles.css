@@ -1,0 +1,64 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+*{box-sizing:border-box}body{font-family:'Poppins',sans-serif;margin:0;background:linear-gradient(180deg,#05060a,#071029);color:#fff}
+.navbar{display:flex;align-items:center;justify-content:space-between;padding:12px 28px;background:linear-gradient(90deg,#d71920,#000);position:sticky;top:0;z-index:40;box-shadow:0 6px 20px rgba(0,0,0,.5)}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:44px;height:44px;border-radius:8px}
+.brand h1{font-size:1.2rem;margin:0;color:#fff}
+.nav-links a{color:#fff;margin:0 10px;text-decoration:none;font-weight:600;opacity:.95;padding:6px 8px;border-radius:8px;transition:all .2s}
+.nav-links a:hover{background:rgba(255,204,51,.12);color:#ffcc33;transform:translateY(-2px)}
+
+/* hero */
+.hero{height:68vh;background:url(../public/assets/banner.jpg) center/cover no-repeat;display:grid;place-items:center;position:relative;overflow:hidden}
+.hero::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(3,3,3,.25),rgba(0,0,0,.55))}
+.hero .inner{position:relative;text-align:center;z-index:2;animation:heroIn .8s ease both}
+.hero h2{font-size:3rem;letter-spacing:1px;margin:0 0 8px;color:#fff;text-shadow:0 8px 30px rgba(0,0,0,.6)}
+.hero p{max-width:760px;margin:0 auto;color:rgba(255,255,255,.9);font-size:1.05rem}
+.hero .cta{display:inline-block;margin-top:18px;padding:14px 26px;border-radius:12px;background:linear-gradient(90deg,#ffcc33,#f59e0b);color:#111;font-weight:700;box-shadow:0 12px 32px rgba(0,0,0,.5);text-decoration:none}
+
+/* layout */
+.container{max-width:1200px;margin:0 auto;padding:36px 20px}
+.section{margin-bottom:36px}
+.section-title{font-size:1.6rem;color:#ffcc33;margin-bottom:12px}
+
+/* cards grid */
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:18px}
+.card{background:linear-gradient(180deg,#0b1220,#061022);border-radius:14px;padding:14px;box-shadow:0 10px 30px rgba(0,0,0,.6);transition:transform .22s ease,box-shadow .22s}
+.card:hover{transform:translateY(-8px);box-shadow:0 20px 40px rgba(0,0,0,.7)}
+.thumb{width:100%;height:160px;object-fit:cover;border-radius:10px;margin-bottom:10px}
+
+/* schedule */
+.schedule-item{display:flex;align-items:center;justify-content:space-between;padding:12px;border-radius:12px;background:linear-gradient(180deg,#071025,#02101a);box-shadow:0 8px 24px rgba(0,0,0,.5)}
+
+/* stats area */
+.stats-row{display:flex;gap:18px;flex-wrap:wrap;align-items:stretch}
+.chart-wrap{flex:1;min-width:320px}
+
+/* footer */
+.footer{padding:24px;text-align:center;color:#cbd5e1;background:linear-gradient(180deg,#02040a,#021026);margin-top:40px}
+
+/* animations */
+@keyframes heroIn{from{transform:translateY(24px);opacity:0}to{transform:translateY(0);opacity:1}}
+.team-page {
+  padding: 40px;
+  text-align: center;
+}
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 20px;
+}
+.player-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: transform 0.2s ease;
+}
+.player-card img {
+  width: 100%;
+  border-radius: 12px;
+}
+.player-card:hover {
+  transform: translateY(-5px);
+}

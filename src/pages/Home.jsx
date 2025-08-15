@@ -1,0 +1,2 @@
+import React from 'react'; import PollWidget from '../components/PollWidget';
+export default function Home(){ return (<div><section className='hero'><div className='inner'><h2>PLAY BOLD</h2><p>RCB Fan Hub — schedules, stats, news, and fan zone.</p><a className='cta' href='/team'>Explore Team</a></div></section><div className='container'><h3 className='section-title'>Get involved</h3><div className='grid'><PollWidget/></div></div></div>);}

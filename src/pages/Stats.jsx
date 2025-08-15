@@ -1,0 +1,2 @@
+import React from 'react'; import StatsChart from '../components/StatsChart';
+export default function Stats(){ const labels=['Virat','Faf','Maxwell','DK','Siraj']; const values=[640,512,398,210,16]; return (<div className='container'><h3 className='section-title'>Statistics</h3><div className='stats-row'><StatsChart labels={labels} values={values} title='Top contributors'/></div></div>);}

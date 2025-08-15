@@ -1,0 +1,1 @@
+const schedule=[{opponent:'CSK',date:'2025-04-05',venue:'M. Chinnaswamy Stadium'},{opponent:'MI',date:'2025-04-10',venue:'Wankhede Stadium'},{opponent:'KKR',date:'2025-04-15',venue:'Eden Gardens'}]; export default schedule;

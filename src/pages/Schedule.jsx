@@ -1,0 +1,2 @@
+import React from 'react'; import schedule from '../data/schedule';
+export default function Schedule(){ return (<div className='container'><h3 className='section-title'>Fixtures</h3><div style={{display:'grid',gap:12}}>{schedule.map((m,i)=>(<div key={i} className='schedule-item'><div><strong>RCB vs {m.opponent}</strong></div><div className='badge'>{m.date}</div><div style={{color:'#9aa'}}> {m.venue}</div></div>))}</div></div>);}

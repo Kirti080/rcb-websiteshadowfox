@@ -1,0 +1,2 @@
+import React from 'react'; import news from '../data/news';
+export default function News(){ return (<div className='container'><h3 className='section-title'>News</h3><div className='grid cards'>{news.map((n,i)=>(<div className='card' key={i}><h4>{n.title}</h4><p style={{color:'#9aa'}}>{n.description}</p></div>))}</div></div>);}

@@ -1,0 +1,2 @@
+import React from 'react'; import players from '../data/players'; import PlayerCard from '../components/PlayerCard';
+export default function Team(){ return (<div className='container'><h3 className='section-title'>Squad</h3><div className='grid cards'>{players.map(p=> <PlayerCard key={p.name} name={p.name} role={p.role} img={p.img}/> )}</div></div>);}

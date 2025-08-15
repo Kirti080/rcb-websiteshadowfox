@@ -1,0 +1,1 @@
+const news=[{title:'RCB Unveils New Jersey',description:'The new season jersey blends tradition with bold design.'},{title:'Pre-season Camp Highlights',description:'Fitness drills and net sessions underway in Bengaluru.'}]; export default news;
